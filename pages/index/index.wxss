@@ -1,0 +1,34 @@
+/* pages/index/index.wxss */
+page{
+  height: 100%; /* <page> 高度设置为100% ，即全屏高度，从而保证indexContainer 撑开颜色与bar一致*/
+}
+.indexContainer{
+  display: flex; /*启用弹性模型*/
+  flex-direction: column; /*flex默认主轴是 row 即水平方向，此处改为column 垂直方向，即全局视角元素按从上到下摆放*/
+  align-items: center; /* 控制辅轴 居中，即元素水平居中*/
+  background-color: #f0f; /*整个页面颜色与顶部bar一致*/
+  height: 100%; /*继承父元素 <page>的高度，实现整个页面撑开颜色与 bar一致*/
+}
+
+.avatarUrl{
+  /* 1px = 2 rpx，px 是物理像素，rpx是响应像素，即会随机型屏幕伸缩*/
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%; /* 圆形倒角*/
+  margin: 100rpx 0; /*距离边框边距：上下100，左右为0*/
+}
+
+.userName {
+  font-size: 32rpx; /*字体大小小32*/
+  margin: 100rpx 0; /*距离边框边距：上下100，左右为0*/
+}
+
+.goStudy{
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 1rpx solid #333;
+  border-radius: 10rpx;
+}

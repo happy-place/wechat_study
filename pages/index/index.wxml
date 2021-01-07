@@ -1,0 +1,7 @@
+<view class="indexContainer">
+  <image class="avatarUrl" src="/static/images/nvsheng.jpg"></image>
+  <text class="userName">{{msg}}</text>
+  <view class="goStudy" catchtap="parentTapHandler">
+    <text catchtap="childTapHandler">Hello world</text>
+  </view>
+</view>
